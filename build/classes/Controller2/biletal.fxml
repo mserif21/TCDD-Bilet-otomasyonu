@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller2.BiletalController">
+   <children>
+      <DatePicker fx:id="date_tarih" editable="false" layoutX="42.0" layoutY="142.0" onAction="#ShowTarih" prefHeight="25.0" prefWidth="188.0" promptText="bilet tarihi" />
+      <ComboBox fx:id="comb_tarife" layoutX="42.0" layoutY="186.0" onAction="#Tarife_Sec" prefHeight="25.0" prefWidth="188.0" promptText="Tarife seç" />
+      <Label layoutX="102.0" layoutY="48.0" text="bilet islemi" />
+      <TextField fx:id="txt_tarife" editable="false" layoutX="391.0" layoutY="90.0" />
+      <Separator layoutX="276.0" layoutY="90.0" orientation="VERTICAL" prefHeight="277.0" prefWidth="5.0" />
+      <Separator layoutX="24.0" layoutY="65.0" prefHeight="17.0" prefWidth="230.0" />
+      <Separator layoutX="300.0" layoutY="66.0" prefHeight="17.0" prefWidth="280.0" />
+      <TextField fx:id="txt_nerden" editable="false" layoutX="391.0" layoutY="123.0" text="malatya" />
+      <TextField fx:id="txt_nereye" editable="false" layoutX="391.0" layoutY="155.0" />
+      <TextField fx:id="txt_tarih" editable="false" layoutX="391.0" layoutY="184.0" />
+      <TextField fx:id="txt_saat" editable="false" layoutX="391.0" layoutY="213.0" text="12 : 10" />
+      <TextField fx:id="txt_kol_no" editable="false" layoutX="391.0" layoutY="245.0" />
+      <Label layoutX="300.0" layoutY="94.0" text="Tarife" />
+      <Label layoutX="300.0" layoutY="127.0" text="nereden" />
+      <Label layoutX="300.0" layoutY="155.0" text="nereye" />
+      <Label layoutX="300.0" layoutY="189.0" text="tarih" />
+      <Label layoutX="300.0" layoutY="217.0" text="saat" />
+      <Label layoutX="300.0" layoutY="249.0" text="koltuk no" />
+      <Label layoutX="314.0" layoutY="48.0" text="Bilet bilgileri" />
+      <TextField fx:id="txt_ucret" editable="false" layoutX="391.0" layoutY="280.0" />
+      <Label layoutX="300.0" layoutY="284.0" text="bilet ücreti" />
+      <Button layoutX="42.0" layoutY="90.0" mnemonicParsing="false" onAction="#Koltuk_sec" prefHeight="25.0" prefWidth="188.0" text="Koltuk seçimine git" />
+      <Separator layoutX="31.0" layoutY="262.0" prefHeight="17.0" prefWidth="230.0" />
+      <Label layoutX="174.0" layoutY="14.0" text="Malatya Bilet Satis Sistemi">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comb_nereye" layoutX="42.0" layoutY="233.0" onAction="#Nereye_Sec" prefHeight="25.0" prefWidth="188.0" promptText="Nereye" />
+      <Button layoutX="42.0" layoutY="280.0" mnemonicParsing="false" onAction="#Ucret_hesapla" style="-fx-background-color: #eabdbd;" text="Ücret hesapla" />
+      <Label fx:id="lbl_ucret" layoutX="552.0" layoutY="284.0" prefHeight="17.0" prefWidth="44.0" />
+      <Button layoutX="298.0" layoutY="337.0" mnemonicParsing="false" onAction="#Bilet_Al" prefHeight="43.0" prefWidth="254.0" style="-fx-background-color: #53a8f9;" text="Bilet AL" />
+   </children>
+</AnchorPane>
